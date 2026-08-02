@@ -1,4 +1,6 @@
 /* Persian Color Palette */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+
 body {
     background-image: url("cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA0L3BkbWlzYzExLWJnLXNtaXRoc25jaHNkbTU2MzU1MDEwMDAwMDFiLWltYWdlLTAxLmpwZw.jpg");
     background-size: 400px; /* adjust pattern size */
@@ -170,4 +172,22 @@ section h2 {
     margin-bottom: 25px;
     letter-spacing: 1px;
 }
+section:hover {
+    border-color: #ffd700;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+    transform: scale(1.01);
+    transition: 0.3s ease;
+}
+section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: inherit;
+    background-repeat: inherit;
+    background-position: inherit;
+    opacity: 0.08;
+    z-index: -1;
+}
+
 
