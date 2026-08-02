@@ -104,7 +104,6 @@ header {
     justify-content: center;
     gap: 15px;
 }
-
 /* Apply Persian pattern background to ALL sections */
 section {
     position: relative;
@@ -129,5 +128,46 @@ section::before {
     opacity: 0.08; /* faint Persian pattern */
     z-index: -1;
 }
+section {
+    border: 2px solid #d4af37; /* Persian gold */
+    border-radius: 14px;
+    padding: 40px;
+    margin: 40px auto;
+    position: relative;
+    background-size: 300px;
+    background-repeat: repeat;
+    background-position: center;
+    overflow: hidden;
+}
+section::after,
+section::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url("cHJpdmF0ZS9sci/images/website/2023-04/pdmisc11-bg-smithsnchs.jpg");
+    background-size: cover;
+    opacity: 0.25;
+}
 
+section::before {
+    top: -10px;
+    left: -10px;
+    transform: rotate(45deg);
+}
+
+section::after {
+    bottom: -10px;
+    right: -10px;
+    transform: rotate(45deg);
+}
+
+section h2 {
+    font-family: "Noto Nastaliq Urdu", serif; /* Persian calligraphy font */
+    font-size: 2.2rem;
+    color: #d4af37; /* gold */
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
 
