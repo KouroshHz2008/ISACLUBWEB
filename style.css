@@ -105,3 +105,29 @@ header {
     gap: 15px;
 }
 
+/* Apply Persian pattern background to ALL sections */
+section {
+    position: relative;
+    background-image: url("cHJpdmF0ZS9sci/images/website/2023-04/pdmisc11-bg-smithsnchs.jpg");
+    background-size: 300px;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 40px;
+    border-radius: 12px;
+    overflow: hidden; /* ensures pattern stays inside */
+}
+
+/* Make the pattern faint and elegant */
+section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: inherit;
+    background-repeat: inherit;
+    background-position: inherit;
+    opacity: 0.08; /* faint Persian pattern */
+    z-index: -1;
+}
+
+
